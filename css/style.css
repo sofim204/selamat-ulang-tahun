@@ -163,26 +163,21 @@ html, body {
 }
 
 .kochenknya {
-    animation: kucinggerak 4s infinite;
+    animation: kucinggerak 3s infinite;
 }
 
 @keyframes kucinggerak {
     0% {
-        -ms-transform: translate(10px, -10px);
-        transform: translate(10px, -10px);
-        
+        -ms-transform: translate(-80px, 8px);
+        transform: translate(-80px, 8px);
     }
     50% {
-        -ms-transform: rotate(20deg);
-        transform: rotate(20deg);
-    }
-    75% {
-        -ms-transform: translate(60px, -80px);
-        transform: translate(60px, -80px);
+        -ms-transform: translate(90px, 8px);
+        transform: translate(90px, 8px);
     }
     100% {
-        -ms-transform: translate(10px, -10px);
-        transform: translate(10px, -10px);
+        -ms-transform: translate(500px, 8px);
+        transform: translate(500px, 8px);
     }
 }
 
@@ -200,7 +195,7 @@ html, body {
     bottom: 0;
     animation-name: showmycat;
     animation-duration: 2.5s;
-    z-index: 2;
+    z-index: 5;
 }
 
 @keyframes showmycat {
