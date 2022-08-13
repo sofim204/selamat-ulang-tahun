@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container_first {
+    background: #009FFF;
+    background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF); 
+    background: linear-gradient(to left, #ec2F4B, #009FFF); 
+}
+
+.container_second {
+    background-image: url(../img/bg_home.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 0;
+}
+
+#home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ucapan_wrapper {
+    display: flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.title {
+    background-color: #009FFF;
+    border-radius: 20px;
+    width: 300px;
+    color: #FAFAFA;
+    font-size: 1.5rem;
+    margin: 50px 0;
+    font-family: 'Luckiest Guy', cursive;
+    animation: judulnih 3s infinite;
+}
+
+@keyframes judulnih {
+    0% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        background: #009FFF;
+        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF); 
+        background: linear-gradient(to right, #ec2F4B, #009FFF);
+        box-shadow: 5px 10px 50px 10px #0ff;
+        border: 5px solid #FFFFFF;
+    }
+    50% {
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        background: #009FFF;
+        background: -webkit-linear-gradient(to bottom, #ec2F4B, #009FFF); 
+        background: linear-gradient(to bottom, #ec2F4B, #009FFF);
+        box-shadow: 5px 10px 50px 10px #0ff;
+        border: 5px solid #FFFFFF;
+    }
+    75% {
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        background: #009FFF;
+        background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF); 
+        background: linear-gradient(to left, #ec2F4B, #009FFF);
+        box-shadow: 5px 10px 50px 10px #0ff;
+        border: 5px solid #FFFFFF;
+    }
+    100% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        background: #009FFF;
+        background: -webkit-linear-gradient(to top, #ec2F4B, #009FFF); 
+        background: linear-gradient(to top, #ec2F4B, #009FFF);
+        box-shadow: 5px 10px 50px 10px #0ff;
+        border: 5px solid #FFFFFF;
+    }
+}
+
+.kumpulan_image {
+    display: flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    align-items: center;
+    gap: 50px;
+}
+
+.container_kado {
+    width: 100%;
+    height: 75%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kado {
+    text-align: center;
+    -webkit-transition-duration: 3s;
+    -moz-transition-duration: 3s;
+    -o-transition-duration: 3s;
+    transition-duration: 3s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+.goyangkado {
+    animation: goyangkadouy 5s infinite;
+}
+
+@keyframes goyangkadouy {
+    0% {
+        -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+    50% {
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    100% {
+        -ms-transform: rotate(8deg);
+        transform: rotate(8deg);
+    }
+}
+
+.kado:hover {
+    -webkit-transform: scale(5.0);
+       -moz-transform: scale(5.0);
+        -ms-transform: scale(5.0);
+            transform: scale(5.0);
+}
+
+.text_tekan_kado {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #ffeded;
+    animation: besarkecil 3s infinite;
+}
+
+@keyframes besarkecil {
+    0% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+        color:#ffeded;
+        
+    }
+    50% {
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        color:#b5e90d;
+    }
+    100% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.kochenknya {
+    animation: kucinggerak 4s infinite;
+}
+
+@keyframes kucinggerak {
+    0% {
+        -ms-transform: translate(10px, -10px);
+        transform: translate(10px, -10px);
+        
+    }
+    50% {
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    75% {
+        -ms-transform: translate(60px, -80px);
+        transform: translate(60px, -80px);
+    }
+    100% {
+        -ms-transform: translate(10px, -10px);
+        transform: translate(10px, -10px);
+    }
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.show_catto {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    animation-name: showmycat;
+    animation-duration: 2.5s;
+}
+
+@keyframes showmycat {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.wishes {
+    background-color: #009FFF;
+    border-radius: 20px;
+    width: 300px;
+    color: #FAFAFA;
+    font-size: 0.85rem;
+    margin: 50px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: judulnih 5s infinite;
+}
+
+.anim_1 {
+    animation: anim_1 2s infinite;
+}
+
+@keyframes anim_1 {
+    0% {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);   
+    }
+    50% {
+        -ms-transform: translate(10px, 10px);
+        transform: translate(10px, 10px);
+    }
+    100% {
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px)
+    }
+}
+
+.anim_2 {
+    animation: anim_2 2s infinite;
+}
+
+@keyframes anim_2 {
+    0% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0); 
+    }
+    50% {
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0); 
+    }
+}
+
+.anim_3 {
+    animation: anim_3 2s infinite;
+}
+
+@keyframes anim_3 {
+    0% {
+        -ms-transform: translate(-150px, 14px);
+        transform: translate(-150px, 14px);
+    }
+    50% {
+        -ms-transform: translate(10px, 14px);
+        transform: translate(10px, 14px);
+    }
+    100% {
+        -ms-transform: translate(400px, 14px);
+        transform: translate(400px, 14px);
+    }
+}
+
+.anim_4 {
+    animation: anim_4 2s infinite;
+}
+
+@keyframes anim_4 {
+    0% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    50% {
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
